@@ -131,6 +131,17 @@ ul li  a:hover{
 .pic6_color:hover{
     background-color: rgba(144,84,29,255);
 }
+.pic1_text,.pic2_text,.pic3_text,.pic4_text,.pic5_text,.pic6_text{
+    position:absolute;
+    color: white;
+    margin-left: 50%;
+    margin-top: -40%;
+    font-size: 20px;
+    line-height: 2;
+}
+.pic2_text,.pic4_text,.pic6_text{
+    margin-left: 5%;
+}
 /* footer */
 .footer{
     width: 100%;

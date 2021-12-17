@@ -13,6 +13,7 @@ body{
 }
 .container{
     width: 100%;
+    height: 700px;
     overflow: hidden;
     /* position: relative; */
 }
@@ -94,13 +95,15 @@ h1{
     color: rgb(255, 255, 255);
 
 }
-
+h1 span{
+    margin-left: 20px;
+}
 img{
     width: 250px;
     height: 200px;
     float: left;
     margin-left: 70px;
-    margin-top: 40px;
+    margin-top: 50px;
     border-radius: 20%;
     transform: translateX(80px);
     transition: 2s ease;
@@ -109,7 +112,7 @@ img:hover{
     width: 260px;
     height: 220px;
 }
-.title{
+.title,.dis1,.dis2,.dis3{
     color: white;
     top: 70%;
     left: 10%;
@@ -118,16 +121,77 @@ img:hover{
 }
 .title1{
     color: white;
-    top: 70%;
+    top: 75%;
     left: 45%;
     padding: 20px;
     position: absolute;
 }
 .title2{
     color: white;
-    top: 70%;
+    top: 80%;
     left: 72%;
     padding: 20px;
     position: absolute;
 
+}
+.dis1{
+    top: 80%;
+    left:15%;
+}
+.dis2{
+    top: 85%;
+    left: 42%;
+}
+.dis3{
+    top: 90%;
+    left: 67%;
+}
+button{
+    padding: 10px;
+    background-color: rgb(22, 0, 221);
+    
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+.buy1,.buy2{
+    transform: translateY(440px) translateX(-80px);
+    transition: all 1s;
+}
+.buy2{
+    transform: translateY(400px) translateX(-80px);
+}
+.buy1:hover{
+    padding: 13px;
+    color: black;
+    background-color: white;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: white;
+    /* position: absolute; */
+    margin-top: 2780px;
+    position: relative;
+    padding: 20px;
+}
+.footer h2{
+    text-align: center;
+}
+.address{
+    float: left;
+    padding:20px ;
+    margin-top: 20px;
+    transform: translateX(300px);
+}
+#icon{
+    padding: 20px;
+    transform: translateX(20px);
+    margin-top: 100px;
+    margin-left: -100px;
+    cursor: pointer;
 }
