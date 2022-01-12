@@ -6,6 +6,7 @@
 body{
     font-family: 'Outfit', sans-serif;
     /* box-sizing: border-box; */
+    scroll-snap-align: start;
 
     
 }
@@ -13,10 +14,14 @@ body{
     width: 100%;
     /* overflow: hidden; */
     position: relative;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    
 }
 .navegation{
     z-index: 3;
-
+    
     /* position: sticky; */
     /* position: absolute; */
     /* top: 10%; */
@@ -91,6 +96,13 @@ ul li  a:hover{
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
+    
+
+}
+.menu_main div{
+    scroll-snap-align: start;
+    
+    
 }
 .pic1,.pic2,.pic3,.pic4,.pic5,.pic6{
     width: 500px;
@@ -152,6 +164,7 @@ ul li  a:hover{
     margin-top: 2780px;
     position: relative;
     padding: 20px;
+    scroll-snap-align: start;
 }
 .footer h2{
     text-align: center;
