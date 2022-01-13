@@ -268,8 +268,8 @@ ul li  .nav-links:hover{
 	.btn{
 		padding: 20px;
 		width: 150px;
-		font-size: 10px;
-		top: 35%;
+		font-size: 20px;
+		top: 60%;
 		right: 34%;
 	
 	}
@@ -295,7 +295,7 @@ ul.about-content{
 }
 .about-left{
 	flex-basis: 40%;
-	background-image: url(../something/img/icon.jpg);
+	background-image: url(../img/icon.jpg);
 	background-position: center;
 	background-color: black;
 }
@@ -397,7 +397,7 @@ ul.about-content{
 	color: white;
 }
 #message{
-	padding-right:360px ;
+	padding-right:328px ;
 	padding-bottom: 60px;
 }
 #submit{
@@ -442,13 +442,13 @@ ul.about-content{
 		padding: 3px;
 	}
 	#submit{
-		margin:10px 50px 20px 181px ;
+		margin:39px 51px 0px 50px;
 	}
 	.send{
 		padding-right: 9%;
 	}
 	#message{
-		padding-right: 57%;
+		padding-right: 9%;
 	}
 	.contact-right{
 		flex-basis: 100%;
