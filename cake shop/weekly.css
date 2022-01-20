@@ -186,6 +186,7 @@ ul li .nav-links:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+	position: relative;
 
     
 }
@@ -197,6 +198,21 @@ ul li .nav-links:hover{
     flex-basis: 50%;
     box-shadow: 5px 5px 50px black;
 
+}
+.box-container h3{
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 12%;
+	font-size:2rem;
+
+}
+.line{
+	width: 25%;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	top: 20%;
 }
 
 /* footer  */

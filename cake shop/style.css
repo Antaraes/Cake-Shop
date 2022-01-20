@@ -11,6 +11,111 @@ body{
     width: 100%;
     height: 100vh;
 }
+/* review  */
+.review {
+	max-width: 1000px;
+	margin: 0 auto;
+  	
+  }
+.review img{
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+  	background-position: center;
+	width: 100%;
+	height: 120%;
+}
+  
+  h1 {
+	font-size: 40px;
+	color: #eee;
+	text-transform: capitalize;
+	text-align: center;
+	padding: 40px 0;
+	font-weight: 300;
+  }
+  
+  h3 {
+	font-size: 20px;
+	color: #222;
+	text-transform: capitalize;
+	padding-bottom: 10px;
+  }
+  
+  .cards {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .card {
+	width: 75%;
+	margin: 0 auto;
+	font-size: 15px;
+	padding: 30px 50px;
+	padding-left: 80px;
+	background: rgba(255, 255, 255, 0.6);
+	margin-bottom: 50px;
+  
+	border-top-left-radius: 40px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 40px;
+  
+	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+	transform: skewX(-12deg);
+  }
+  
+  .card__shap {
+	width: 120px;
+	height: 120px;
+	float: left;
+  
+	clip-path: circle(50% at 50% 50%);
+	shape-outside: circle(50% at 50% 50%);
+  
+	transform: translateX(-40px) skewX(12deg);
+  
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .card__img {
+	height: 100%;
+	transform: translateX(-30px) scale(1.4);
+	transition: all 0.5s;
+	backface-visibility: hidden;
+  }
+  
+  .card__caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1;
+	backface-visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s;
+  }
+  
+  .card:hover .card__caption {
+	opacity: 1;
+	transform: translate(-50%, -50%);
+  }
+  .card:hover .card__img {
+	transform: translateX(-30px) scale(1);
+	filter: blur(3px) brightness(80%);
+  }
+  .card__text {
+	transform: skewX(12deg);
+  }
+
+  /* ________________________ */
 .slider{
     width: 100%;
     height: 600px;
@@ -38,7 +143,6 @@ body{
 }
   
   /*css for manual slide navigation*/
-  
 .navigation-manual{
     position: absolute;
     width: 100%;
@@ -77,6 +181,7 @@ body{
     width: 100%;
     justify-content: center;
     margin-top: -50px;
+
 }
 .navigation-auto div{
     border: 2px solid #deeaeb;
@@ -84,19 +189,14 @@ body{
     border-radius: 10px;
     cursor: pointer;
     transition: 2s;
+	display: none;
 }
-.navigation-auto div:not(:last-child){
-    margin-right: 20px;
+.slides .first .text{
+	z-index: 5;
+	position: absolute;
+	color: white;
 }
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    margin-left: 0%;
-}
-#radio1:checked ~ .navigation-auto .auto-btn2{
-    margin-left: -20%;
-}
-#radio1:checked ~ .navigation-auto .auto-btn3{
-    margin-left: -40%;
-}
+
 /* end of slider  */
 .logo-origin{
     float: left;

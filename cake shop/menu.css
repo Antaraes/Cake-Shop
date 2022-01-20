@@ -314,14 +314,7 @@ header{
   }
   
   /*Styles for product card*/
-  .container .product{
-	  display: none;
-  }
-  .container .product:nth-child(1),
-  .container .product:nth-child(2),
-  .container .product:nth-child(3){
-	  display: inline-block;
-  }
+  
   .product .product-card{
 	z-index: 1;
 	background: #000000;
@@ -436,7 +429,7 @@ header{
   .product .popup-card .product-img img{
 	z-index: 2;
 	position: relative;
-	width: 450px;
+	width: 350px;
 	left: -50px;
   }
   
